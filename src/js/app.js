@@ -1,10 +1,10 @@
-import img from '../img/goblin.png';
+// import img from '../img/goblin.png';
 
-class Game {
+export default class Game {
   constructor(fieldSize) {
     this.fieldSize = fieldSize;
     this.character = document.createElement('img');
-    this.character.src = img;
+    this.character.src = 'https://github.com/netology-code/ahj-homeworks/blob/video/dom/pic/goblin.png?raw=true';
     this.currentPosition = 0;
   }
 
