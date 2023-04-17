@@ -3,13 +3,14 @@
 export default class Game {
   constructor(fieldSize) {
     this.fieldSize = fieldSize;
-    this.character = document.createElement('img');
-    this.character.src = 'https://github.com/netology-code/ahj-homeworks/blob/video/dom/pic/goblin.png?raw=true';
     this.currentPosition = 0;
   }
 
   makeField() {
     document.addEventListener('DOMContentLoaded', () => {
+      const character = document.createElement('img');
+      character.setAttribute('src', 'https://github.com/netology-code/ahj-homeworks/blob/video/dom/pic/goblin.png?raw=true');
+
       let x = 0;
       const container = document.createElement('div');
       container.classList.add('container');
